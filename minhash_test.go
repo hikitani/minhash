@@ -12,7 +12,7 @@ func BenchmarkSignature(b *testing.B) {
 	}
 
 	s1024 := string(b1024[:])
-	mh, _ := NewMinHasher(20)
+	mh, _ := NewMinHash(20)
 
 	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
@@ -27,7 +27,7 @@ func BenchmarkSignatureTo(b *testing.B) {
 	}
 
 	s1024 := string(b1024[:])
-	mh, _ := NewMinHasher(20)
+	mh, _ := NewMinHash(20)
 	sig := make([]uint64, 20)
 
 	b.ResetTimer()
