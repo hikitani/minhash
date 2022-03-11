@@ -1,4 +1,4 @@
-package golsh
+package minhash
 
 import (
 	"errors"
@@ -13,7 +13,7 @@ type MinHash struct {
 	hashes []*buzhash64.Buzhash64
 }
 
-func NewMinHash(size int) (*MinHash, error) {
+func New(size int) (*MinHash, error) {
 	if size <= 0 {
 		return nil, errors.New("size must be greater than zero")
 	}

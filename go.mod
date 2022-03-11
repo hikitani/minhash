@@ -1,4 +1,4 @@
-module github.com/hikitani/go-lsh
+module github.com/hikitani/minhash
 
 go 1.17
 
